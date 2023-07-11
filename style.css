@@ -21,7 +21,6 @@ body {
 
 .header-container {
     position: relative;
-    /* Plans to change to 75% with blurred edges */
     text-align: center;
     margin: auto;
     color: blanchedalmond;
@@ -48,8 +47,6 @@ body {
 }
 
 .site-nav {
-    position: sticky;
-    top: 0%;
     margin: 20px;
     margin-top: 0;
     background-color: tomato;
@@ -60,6 +57,7 @@ body {
 }
 
 .site-nav nav ul li {
+
     display: inline;
     list-style: none;
 }
@@ -71,36 +69,79 @@ body {
     padding: 3%;
     border-radius: 25px;
 
+}
 
+.maincontent>.left>article>h2 {
+    color: tomato;
+}
+
+.maincontent>.right>article>h2 {
+    color: tomato;
+    font-size: 3rem;
 }
 
 section.left {
+    color: blanchedalmond;
     box-sizing: border-box;
     background-color: rgba(48, 89, 48, 0.718);
-    flex-basis: 200px;
+    flex-basis: 25%;
     padding: 2%;
     border-radius: 50px 10em;
     font-size: 200%;
     word-spacing: 2px;
 }
 
+section.leftform {
+    color: blanchedalmond;
+    background-color: rgba(48, 89, 48, 0.718);
+    flex-basis: 50%;
+    padding: 2%;
+    border-radius: 50px 10em;
+    font-size: 200%;
+    word-spacing: 2px;
+}
+
+textarea {
+    border: solid 2px black;
+    padding: 2%
+}
+
 section.right {
+    text-align: center;
+    margin-left: 2%;
+    flex: 60%;
+    flex-basis: 60%;
+    background-color: rgba(40, 92, 144, 0.667);
+    border-radius: 25px;
+    /* background-color: rgba(0, 0, 255, 0.351); */
+}
+
+section.rightform {
+    text-align: center;
     margin-left: 2%;
     flex: 60%;
     flex-basis: 60%;
     background-color: rgba(112, 128, 144, 0.667);
     border-radius: 25px;
-    /* background-color: rgba(0, 0, 255, 0.351); */
 }
 
-dl {
+.rightform p {
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 2%;
+    padding: 2%;
+
+}
+
+.pizza>ul {
 
     display: flex;
     display: -webkit-flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-dt {
+.pizza>ul>li {
     background-color: ivory;
     margin: 5px;
     max-width: 300px;
@@ -111,8 +152,8 @@ dt {
 }
 
 
-dt>img {
-    display: block;
+.pizza>ul>li>img {
+    display: flex;
     max-height: 300px;
     max-width: 500px;
     box-shadow: 2px 2px 10px;
@@ -121,8 +162,43 @@ dt>img {
 
 }
 
+li {
+    list-style: none;
+}
+
+.thanks {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.thanks>img {
+    margin: auto;
+    display: block;
+    width: 50%;
+    transform: rotate(90deg);
+}
+
 
 footer {
-
+    display: flex;
+    display: -webkit-flex;
     background-color: coral;
+    justify-content: space-evenly;
+}
+
+.fleft and .fright {
+    box-sizing: border-box;
+    padding: 2%;
+    margin: auto;
+}
+
+@media screen and (max-width: 578px) {
+    .maincontent {
+        flex-direction: column;
+    }
+
+    /* form{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    } */
 }

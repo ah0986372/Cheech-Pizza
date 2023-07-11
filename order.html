@@ -12,7 +12,7 @@
 
 <body>
     <div class="alpha">
-        <img class="headerimg" style="rotate: 90;" src="images/shaian-ramesht-exSEmuA7R7k-unsplash.jpg"
+        <img class="headerimg" src="images/shaian-ramesht-exSEmuA7R7k-unsplash.jpg"
             alt="pizza parlor heading, flurry pizza photo">
         <div class="header-container">
             <h1 class="headertitle1">Cheech's</h1>
@@ -28,12 +28,73 @@
                     </ul>
                 </nav>
             </div>
+
             <div class="maincontent">
-                <section class="left">
 
+                <section class="leftform">
+                    
+                    <h2>Order Placement</h2>
+                    
+                    <article>
+                        <h4>Customer information</h4>
 
+                        <form method="post" action="thankyou.html">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" required>
+                            <br>
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" required>
+                            <br>
+                            <label for="tele">Telephone Number</label>
+                            <input type="tel" id="tele" name="tele" required>
+                            <br>
+                            <label for="pizzadd">Select Pizza</label>
 
+                            <select name="pizzadd" id="pizzadd">
+                                <option value="peperoni">Peperoni</option>
+                                <option value="cheesey original">Cheesey Original</option>
+                                <option value="fajita">Fajita</option>
+                                <option value="pinapple gouda">Pinapple Gouda</option>
+                                <option value="Feta & Greens">Fetta Greens</option>
+                                <option value="combo">Party Night Combo</option>
+                            </select>
+                            <br>
+                            <label for="quant">Quantity</label>
+                            <input type="number" value="1" min="1" max="10">
+                            <br>
+                            <label for="custinp">Leave your Comments</label>
+                            <br>
+                            <textarea name="custinp" id="custinp" cols="30"
+                                rows="10" placeholder="Have something to say between bites? Let's hear it!"></textarea>
+                            <br>
+                            <input type="submit" value="Its Pizza Time!">
+                        </form>
 
+                    </article>
+                    
+                </section>
+                <section class="rightform">
+                    <h2></h2>
+                    <article>
+                        <h2>Customer Testimonial</h2>
+
+                        <p>I recently tried the pineapple gouda pizza from Cheech's and it exceeded my expectations. The
+                            sweet and tangy pineapple paired perfectly with the creamy and savory gouda cheese. The
+                            crust was crispy and the toppings were piled high, giving each slice a generous amount of
+                            flavor. The only downside was that the pizza was a bit greasy, but it didn't take away from
+                            the overall deliciousness. I definitely recommend giving the pineapple gouda pizza a try at
+                            Cheech's!</p>
+                        <p>I recently ordered the feta and field greens pizza from Cheech's and I have to say, it was
+                            absolutely delicious! Everything from the crust to the toppings was perfect and the flavors
+                            blended together so well. The feta cheese added a nice tangy taste and the fresh field
+                            greens gave it a healthy touch.</p>
+                        <p>I ordered a pizza from Cheech's and unfortunately, it wasn't what I wanted. However, when I
+                            called them to inform them about the mistake, they were polite and quick in rectifying the
+                            issue. They replaced the pizza for me and encouraged me to try the erronius pizza. You know
+                            what? That mistake was absolutely delicious! I am giving them 5 stars for their amazing
+                            customer service and for turning the mistake into a tasty surprise. I will definitely be
+                            ordering from them again.</p>
+                    </article>
                 </section>
             </div>
 
@@ -46,6 +107,14 @@
 
 
     </div>
+    <footer>
+        <div class="fleft">
+            Cheech's Pizza | Author Akeem Hertenstein
+        </div>
+        <div class="fright">
+            Contact us <i class="fa-sharp fa-solid fa-hashtag"></i>
+        </div>
+    </footer>
 
 </body>
 
