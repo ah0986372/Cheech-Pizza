@@ -125,6 +125,12 @@ section.rightform {
     border-radius: 25px;
 }
 
+.rightform h2 {
+    color: tomato;
+    text-transform: capitalize;
+    padding-top: 2%;
+}
+
 .rightform p {
     display: block;
     font-size: 1.3rem;
